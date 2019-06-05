@@ -20,16 +20,12 @@ def gera_base_linear(seed,n_row,min_v,max_v):
     plt.show()
     
     return x, delta, y 
-	
+
 def gera_pandas_base_linear(x,y,delta):
-	df = pd.DataFrame()
-	df["y"] = y
-	df["x"] = x
-	df["delta"] = delta
-	df.head()
-	
-	return df
-
-
-
+    df = pd.DataFrame()
+    df["y"] = y
+    df["x"] = x
+    df["delta"] = delta
+    df.head()
     
+    return df

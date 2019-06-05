@@ -1,0 +1,12 @@
+def expo_basic(arquivo, data_brut):    
+    print("Estatisticas Básicas")
+    print("")
+    print("Nome do Dataset: " + arquivo)
+    print("Quantidade de linhas: " + str(len(data_brut)))
+    print("Quantidade de colunas: " + str(len(data_brut.columns)))
+    print("")
+    print("Describe Columns")
+    print(data_brut.dtypes)
+    print("")
+    print("Sample")
+    print(print(data_brut.T.iloc[:,0:5]))
